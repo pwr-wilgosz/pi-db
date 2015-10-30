@@ -4,7 +4,9 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.all.includes(:article) #.limit(5)
+    scope = Comment.all
+    @comments = params[:fix].present? ? scope.includes(:article) : scope
+
   end
 
   # GET /comments/1

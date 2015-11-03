@@ -12,7 +12,7 @@
 
 common: &default_settings
   # Required license key associated with your New Relic account.
-  license_key: 95b2416ad89e86667aac4d1f093a35cc1b45cfd0
+  license_key: url = URI.parse('http://www.example.com/index.html')
 
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
